@@ -1,0 +1,43 @@
+{
+    "port": "9009",
+    "log": {
+        "level": "info"
+    },
+    "paginate": {
+        "default": 10,
+        "max": 50
+    },
+    "authentication": {
+        "secret": "d1913ad1488e34672b0c52182514cbc192a55f9d8db6381d6652c56c98bec167eb243c1a6f1be041b657724542d8d6b9d932cb2675ebcf662e702e8c93a76842c5b75021eb660f1962ac8f0760b2bb894be61d724eb7b360f958752d86cff1783c0ae8f0f5d539da3cd55702b0befc3d524020e860794a398e4fd03acb22748921461534eb9391de21b0e47be1ff209206ca204531241efde72f496f0008d84aeb387a9c5beb5acee47032ea3c929d3add4fe8c71e27ed5b5f247b7d27db50348a6a448cd3be3c41a9f66e8551bc07d315429c4898ac896c11173a043fcf66448a8cb96fad21ad20fb6d094bde2b041c932a0b40c4cd07f50c89715e89a6722b",
+        "jwt": {
+            "header": {
+                "typ": "access"
+            },
+            "audience": "https://yourdomain.com",
+            "subject": "anonymous",
+            "issuer": "your-project",
+            "algorithm": "HS256",
+            "expiresIn": "1d"
+        },
+        "cookie": {
+            "enabled": true,
+            "name": "your-project-jwt",
+            "httpOnly": false,
+            "secure": false
+        }
+    },
+    "mongodb": {
+        "uri": "mongodb://localhost:27017/nodejs-base-project"
+    },
+    "raven": {
+        "enable": false,
+        "client_id": ""
+    },
+    "agenda": {
+        "db": {
+            "address": "mongodb://localhost:27017/nodejs-base-project",
+            "collection": "jobs"
+        },
+        "job_types": ""
+    }
+}
