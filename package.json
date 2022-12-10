@@ -72,7 +72,7 @@
     "cors": "^2.8.4",
     "debug": "~2.6.9",
     "eventemitter2": "^5.0.1",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "express-validation": "^1.0.2",
     "express-winston": "^2.4.0",
     "helmet": "^3.8.1",
